@@ -1,0 +1,21 @@
+---
+layout: layouts/home.njk
+title: Pokemons Page
+description: "LIST OF POKEMONS"
+---
+
+<h1>{{ title }}</h1>
+
+<a href="/">Back To Home </a>
+
+{# {{ pokemons | dump }} #}
+
+<ul>
+  {% for pokemon in pokemons %}
+    <li>
+      <h3>{{ pokemon.name }}</h3>
+      <a href="{{pokemon.url}}" target="_blank">API JSON Details</a>
+    </li>
+  {% endfor %}
+</ul>
+

@@ -1,0 +1,30 @@
+---
+title: '11ty Crash Course #1'
+layout: layouts/base.njk
+---
+{% from 'components/card.njk' import card %}
+
+<h1>{{ title }}</h1>
+<p> I am also in the home page</p>
+
+<div class="home-card__cotnainer">
+
+  {{ card(title='Contact with us!', link='/contact', link_text='Go To Contact', raised=false) }}
+  
+  {% for cardItem in cards %}
+    <div>
+    {{ card(
+        title=cardItem.title, 
+        link=cardItem.link, 
+        link_text=cardItem.linkText, 
+        raised=cardItem.raised
+    ) }}
+    </div>
+  {% endfor %}
+</div>
+
+<img 
+  src="/assets/imgs/selfie-astronaut.jpeg" 
+  alt="Selfie in the starts"
+  width="300px" 
+/>

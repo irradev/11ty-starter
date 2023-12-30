@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Blog!",
+    "link": "/blog",
+    "linkText": "Writing about new technologies",
+    "raised": true
+  },
+  {
+    "title": "See pokemons",
+    "link": "/pokemons",
+    "linkText": "Go To List of Pokemons",
+    "raised": true
+  },
+  {
+    "title": "News",
+    "link": "/news",
+    "linkText": "Go to News",
+    "raised": false
+  }
+]

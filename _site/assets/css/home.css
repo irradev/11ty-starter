@@ -1,0 +1,9 @@
+html,
+body {
+  background: green;
+  color: tomato;
+}
+
+img {
+  border-radius: 40px;
+}
